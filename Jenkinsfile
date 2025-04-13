@@ -13,6 +13,7 @@ pipeline {
             steps {
                 sh '''
                     ls -la
+                    echo "This is a small change"
                     node --version
                     npm --version
                     npm install -g npm
