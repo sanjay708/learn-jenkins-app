@@ -6,7 +6,7 @@ pipeline {
             agent {
                 docker {
                     image 'node:18-alpine'
-                    npm install -g npm
+                    args '-u root'
                     reuseNode true
                 }
             }
